@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>SPA Simple</title>
+</head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4B0082">
+
+<body>
+    <h1>SPA Básica</h1>
+    <!-- Navegación simple -->
+    <nav>
+        <button id="inicio">Inicio</button>
+        <button id="acerca">Acerca de</button>
+    </nav>
+    <!-- Contenido dinámico -->
+    <div id="contenido">
+        <h2>Inicio</h2>
+        <p>Bienvenido a la página de inicio.</p>
+    </div>
+    <script>
+        // Cambiar el contenido según la sección
+        function cambiarContenido(html) {
+            document.getElementById('contenido').innerHTML = html;
+        }
+        document.getElementById('inicio').onclick = () => {
+            cambiarContenido('<h2>Inicio</h2><p>Bienvenido a la página de inicio.</p>');
+        };
+        document.getElementById('acerca').onclick = () => {
+            cambiarContenido('<h2>Acerca de</h2><p>Esta es una SPA sencilla.</p>');
+        };
+
+        // Registrar el Service Worker si está disponible
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then((registration) => {
+                    console.log('Service Worker registrado con éxito:', registration.scope);
+                })
+                .catch((error) => {
+                    console.log('Error al registrar el Service Worker:', error);
+                });
+        }
+
+    </script>
+</body>
+
+</html>
