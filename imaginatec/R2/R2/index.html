@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de URLs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de URLs</h1>
+        <p>Ingresa una URL para verificar su validez</p>
+    </header>
+    <main>
+        <form id="urlForm" onsubmit="return false;"> <label for="urlInt">Ingresa una URL</label><br>
+            <input type="text" id="urlInt" name="urlInt" placeholder="https://ejemplo.com" required>
+            <button type="button" id="verificateButton">Verificar</button>
+        </form>
+
+        <section id="resultSection">
+            <h2>Resultado de la verificación</h2>
+            <p id="resultMessage"></p>
+            <div id="linkContainer"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Verificador de URLs by Oswaldo Alcaraz y Uzziel Escobar</p>
+    </footer>
+
+</body>
+
+</html>

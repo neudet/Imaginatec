@@ -1,0 +1,92 @@
+:root {
+    --resaltar: #684c6e;
+    --fondo: #e8e8cf;
+    --fuente: 'Baloo', sans-serif;
+}
+
+body {
+    font-family: var(--fuente);
+    margin: 0;
+    padding: 0;
+    background-color: var(--fondo);
+}
+
+header {
+    background-color: var(--resaltar);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+main {
+    color: black;
+    margin: 10px auto;
+    padding: 50px;
+    max-width: 1450px;
+    background-color: var(--fondo);
+    box-shadow: 0 0 10px rgba(53, 0, 79, 0.1);
+    text-align: center; 
+    margin-bottom: 260px;
+
+}
+
+label {
+    font-size: 2em;
+    text-align: center;
+}
+
+
+input {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    text-align: center;
+}
+ h2 {
+    font-size: 2em;
+    text-align: center;
+
+ }
+
+ section {
+    display: none;
+ }
+
+button {
+    color: white;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: var(--resaltar);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bd8ac8;
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--resaltar);
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
